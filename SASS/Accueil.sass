@@ -1,0 +1,253 @@
+// Import de Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@mixin milieu 
+            display: flex
+            justify-content: center
+            align-items: center 
+
+@mixin title-size
+            font-size: 24px
+
+@mixin gradient-button
+            width: 218px
+            height: 50px
+            background: linear-gradient(#FF79DA 0%, #9356DC 100%)
+            border: none
+            border-radius: 25px
+            color: white
+            font-weight: bold
+            cursor: pointer
+            display: flex
+            align-items: center
+            justify-content: center
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+            font-size: 16px
+
+@mixin icon-fonction
+            font-size: 20px
+            margin-right: 20px
+            width: 20px
+            text-align: center
+            margin-left: 30px                       
+
+
+            
+body 
+            display: flex
+            flex-direction: column 
+            margin: 0px
+            font-family: 'Roboto', serif
+
+.header            
+            &__logo
+                        @include milieu
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15)
+                        width: 100%
+                        height: 63px
+                        position: relative
+                        z-index: 3
+                        & img 
+                                    width: 162px
+                                    height: 32px
+                                    
+            &__localisation
+                        
+                        @include milieu
+                        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+                        gap: 17px
+                        width: 100%
+                        height: 50px             
+                        background-color: #EAEAEA
+                        position: relative
+                        z-index: 2
+
+.explore
+            padding-top: 38px
+            display: flex
+            flex-direction: column
+            padding-bottom: 60px
+            background-color: #F3F3F3
+
+            &__title
+                        width: 80%
+                        text-align: center
+                        margin: 0 auto
+                        @include title-size
+
+            &__txt 
+                        width: 90%
+                        text-align: center
+                        margin: 0 auto
+                        margin-top: 10px
+                        font-size: 18px
+            
+            &__button
+                        @include gradient-button
+                        margin: 0 auto
+                        text-align: center
+                        margin-top: 27px
+
+.fonctionnement
+            margin-left: 20px
+            padding-bottom: 35px
+
+            &__title 
+
+                        margin-top: 48px
+                        @include title-size                        
+
+            &__button
+                        display: flex
+                        display: flex
+                        height: 72.38px
+                        width: 90%
+                        align-items: center
+                        position: relative
+                        background-color: #F6F6F6
+                        border-radius: 20px
+                        padding: 25px 35px
+                        margin: 25px 0%
+                        margin-left: 12px
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15)
+                        border: 1px black
+                        padding: 0px
+
+                        &--number 
+
+                                    position: absolute
+                                    left: -12px
+                                    top: 31%
+                                    transform: translateY(-50%)
+                                    background-color: #9356DC
+                                    color: white
+                                    width: 24px
+                                    height: 24px
+                                    border-radius: 50%
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    font-size: 14px
+                                    font-weight: bold
+                                    z-index: 1
+
+                        &--txt
+
+                                    color: #000
+                                    font-size: 16px
+                                    font-weight: 500
+                                    margin: 0
+
+#fonctionnement__button--icon
+
+            @include icon-fonction
+            color: #7E7E7E
+
+            &-purple
+
+                        @include icon-fonction
+                        color: #9356DC
+
+.restaurant
+
+            background-color: #F3F3F3
+            padding-left: 20px
+            width: 100%
+            padding-bottom: 50px
+
+            &__title
+
+                        margin-top: 60px
+
+            &__card
+                        width: 90%
+                        height: 251px
+                        display: flex
+                        flex-direction: column
+                        background-color: white
+                        border-radius: 20px
+                        filter: drop-shadow(0px 3px 15px rgba(7, 6, 6, 0.1))
+                        margin-bottom: 15px
+                        text-decoration: none
+                        
+                        &--nouveau 
+                                    position: absolute
+                                    top: 13px
+                                    right: 15px
+                                    background-color: #99E2D0
+                                    color: #008766
+                                    font-size: 14px
+                                    font-weight: 500
+                                    padding: 7px 9px
+                                    border-radius: 2px
+                                    z-index: 2
+                                    margin: 0
+
+                        &--image
+                                    object-fit: cover
+                                    width: 100%
+                                    height: 174px
+                                    border-top-left-radius: 20px
+                                    border-top-right-radius: 20px
+                                    margin-bottom: 15px
+
+                        &--name
+                                    display: flex
+                                    justify-content: space-between
+                                    align-items: center
+                                    margin: 0px
+                                    color: black
+                                    font-size: 18px
+                                    padding-left: 13px
+                                    width: 225px
+                                    margin-bottom: 5px 
+                                    font-weight: 700
+
+                        &--localisation
+
+                                    margin: 0px
+                                    text-decoration: none
+                                    color: black
+                                    font-size: 17px
+                                    padding-left: 13px
+                                    width: 225px
+                                    font-weight: 300
+
+                        &--favorite
+                                    position: absolute
+                                    top: 200px      // Position fixe depuis le haut de la card
+                                    right: 20px     
+                                    font-size: 22px
+                                    color: #000
+                                    cursor: pointer
+                                    z-index: 2
+
+
+
+.footer
+
+            padding: 27px 25px 22px 25px
+            background-color: #353535
+
+            &__title
+                        width: 139px
+                        height: 24px
+                        filter: brightness(0) invert(1)
+                        margin-bottom: 21px
+                        object-fit: cover
+
+
+            &__link 
+                        display: flex
+                        flex-direction: column
+                        gap: 7px
+            
+                        & a 
+                                    text-decoration: none
+                                    color: #FFFFFF
+                                    height: 19px
+                                    font-size: 16px
+
+                                    & i 
+                                                padding-right: 10px
+                                                width: 12px !important
