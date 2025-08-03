@@ -3,12 +3,102 @@
 <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>Restaurant La palette</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/SASS/Restaurant.css">
 </head>
 <body>
-            
+    <header class="title">
+        <div class="back">
+            <a href="#">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="logo">
+            <img src="/assets/images/logo/ohmyfood.png" alt="logo OhMyFood">
+        </div>
+    </header>
+    <div class="Photo__restaurant">
+        <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
+    </div>
+    <section class="Restaurant">
+        <div class="Restaurant__header">
+            <h1 class="Restaurant__header--name">La palette du goût</h1>
+            <i class="Restaurant__header--like fa-solid fa-heart"></i>
+        </div>
+        <div class="Menu">
+            <h2 class="Menu__section">Entrées</h2>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Fricassée d'escargots</h3>
+                <p class="Menu__card--info">Au piment d'Espelette</p>
+                <span class="Menu__card--price">25€</span>
+            </div>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Foie gras de canard mi-cuit</h3>
+                <p class="Menu__card--info">Et ses copeaux de truffe noire</p>
+                <span class="Menu__card--price">35€</span>
+            </div>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Œuf au plat</h3>
+                <p class="Menu__card--info">Assaisonné à la truffe sur lit de caviar</p>
+                <span class="Menu__card--price">20€</span>
+            </div>
+        </div>
+        <div class="Menu">
+            <h2 class="Menu__section">Plats</h2>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Filet de bœuf aux herbes</h3>
+                <p class="Menu__card--info">Accompagné de sa ribambelle de légumes</p>
+                <span class="Menu__card--price">40€</span>
+            </div>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Parmentier de queue de bœuf</h3>
+                <p class="Menu__card--info">À la truffe noire sur sa purée de panais</p>
+                <span class="Menu__card--price">35€</span>
+            </div>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Filet de turbot</h3>
+                <p class="Menu__card--info">Aux agrumes</p>
+                <span class="Menu__card--price">44€</span>
+            </div>
+        </div>
+        <div class="Menu">
+            <h2 class="Menu__section">Desserts</h2>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Paris-Brest</h3>
+                <p class="Menu__card--info">Revisité</p>
+                <span class="Menu__card--price">18€</span>
+            </div>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Macaron au chocolat d'exception </h3>
+                <p class="Menu__card--info">Et glace à la vanille de Madagascar</p>
+                <span class="Menu__card--price">22€</span>
+            </div>
+            <div class="Menu__card">
+                <h3 class="Menu__card--name">Mousse au chocolat </h3>
+                <p class="Menu__card--info">Au piment d'Espelette et à la truffe noire</p>
+                <span class="Menu__card--price">23€</span>
+            </div>
+        </div>
+        <a class="commander" href="#">Commander</a>
+    </section>
+    <footer class="footer">
+        <img src="/assets/images/logo/ohmyfood@2x.svg" class="footer__title" alt="Logo OhMyFood"></object>
+        <div class="footer__link">
+            <a href="#">
+                <i class="fa-solid fa-utensils"></i> 
+                Proposer un restaurant
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-handshake"></i>
+                Devenir partenaire
+            </a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -70,6 +70,10 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-top: 27px;
+  text-decoration: none;
+}
+.explore__button:hover, .explore__button:active, .explore__button:focus {
+  background: linear-gradient(rgb(255, 172, 232.0820895522) 0%, rgb(174, 128.25, 228.75) 100%);
 }
 
 .fonctionnement {
